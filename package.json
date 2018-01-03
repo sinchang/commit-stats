@@ -1,0 +1,18 @@
+{
+  "name": "commit-stats",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "sinchang <sinchangwen@gmail.com> (http://sinchang.me/)",
+  "license": "MIT",
+  "dependencies": {
+    "git-repo-name": "^0.6.0",
+    "gitty": "^3.6.0",
+    "lazy-cache": "^2.0.2",
+    "moment": "^2.20.1"
+  }
+}
