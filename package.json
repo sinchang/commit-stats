@@ -1,6 +1,6 @@
 {
   "name": "commit-stats",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate the Git commit information chart",
   "main": "src/index.js",
   "scripts": {
