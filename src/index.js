@@ -63,6 +63,7 @@ function init(cwd = process.cwd()) {
   let script = ''
 
   script += `document.getElementById('repoName').innerHTML = '${stats.info.repoName}';`
+  script += `document.getElementById('date').innerHTML = '${new Date()}';`
 
   const backgroundColors = []
 
