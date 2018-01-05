@@ -1,18 +1,38 @@
 {
   "name": "commit-stats",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "Generate the Git commit information chart",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src/*.js",
+    "fix": "eslint src/*.js --fix",
+    "prepublishOnly": "npm run lint"
   },
-  "keywords": [],
+  "bin": {
+    "commit-stats": "src/cli.js"
+  },
+  "keywords": [
+    "git",
+    "commit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sinchang/commit-stats.git"
+  },
   "author": "sinchang <sinchangwen@gmail.com> (http://sinchang.me/)",
   "license": "MIT",
   "dependencies": {
     "git-repo-name": "^0.6.0",
     "gitty": "^3.6.0",
     "lazy-cache": "^2.0.2",
-    "moment": "^2.20.1"
+    "lodash.keys": "^4.2.0",
+    "lodash.values": "^4.3.0",
+    "moment": "^2.20.1",
+    "randomcolor": "^0.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-rem": "^4.0.0",
+    "xo": "^0.18.2"
   }
 }
