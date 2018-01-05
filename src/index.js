@@ -103,15 +103,14 @@ function init(cwd = process.cwd()) {
         }
       });`
     } else {
-      const color = randomColor()
       script += `new Chart(document.getElementById('${key}').getContext('2d'), {
         type: 'line',
         data: {
           labels: ${items},
           datasets: [{
             label: "commit count by ${key}",
-            backgroundColor: '${color}',
-            borderColor: '${color}',
+            backgroundColor: '#36A2EB',
+            borderColor: '#36A2EB',
             data: ${counts},
             fill: false,
           }],
@@ -124,7 +123,7 @@ function init(cwd = process.cwd()) {
   })
 
   function sortByWeek() {
-    const weeks = ['Sun', 'Mon', 'Tues', 'Wed', 'thurs', 'Fri', 'Sat']
+    const weeks = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat']
 
     history.forEach(item => {
       const day = new Date(item.date).getDay()
