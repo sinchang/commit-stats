@@ -7,7 +7,6 @@ const randomColor = require('randomcolor')
 const keys = require('lodash.keys')
 const values = require('lodash.values')
 const getTpl = require('./template')
-// require('chart.piecelabel.js')
 
 lazy('gitty', 'git')
 
@@ -85,7 +84,6 @@ function init(cwd = process.cwd()) {
         data: {
           labels: ${items},
           datasets: [{
-            // label: "commit count by author",
             backgroundColor: ${JSON.stringify(backgroundColors)},
             data: ${counts},
           }]
