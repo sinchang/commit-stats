@@ -1,5 +1,7 @@
 # Commit Stats
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sinchang/commit-stats.svg)](https://greenkeeper.io/)
+
 [![NPM version](https://img.shields.io/npm/v/commit-stats.svg?style=flat)](https://npmjs.com/package/commit-stats) 
 [![NPM downloads](https://img.shields.io/npm/dm/commit-stats.svg?style=flat)](https://npmjs.com/package/commit-stats)
 
